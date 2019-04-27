@@ -18,7 +18,7 @@ function [ mu, var ] = plot_mu_var_histogram( lambda, N_samples, reps )
     subplot(2,1,2);
     histogram(var);
     title('Varianza');
-    suptitle(['Valores estimados (lambda = ', num2str(lambda), ', Nro. de muestras = ', num2str(N_samples), ', repeticiones = ', num2str(reps)]);
+    suptitle({'Valores estimados',[ 'lambda = ', num2str(lambda), ', Nro. de muestras = ', num2str(N_samples), ', repeticiones = ', num2str(reps)]});
     
 
 end
