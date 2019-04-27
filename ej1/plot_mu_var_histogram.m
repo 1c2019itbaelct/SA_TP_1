@@ -6,7 +6,7 @@ function [ mu, var ] = plot_mu_var_histogram( lambda, N_samples, reps )
     var = ones(1,reps);
     
     for i = 1:reps
-        exp_samples = montecarlo_exponencial(lambda, N_samples);
+        exp_samples = mc_exponencial(lambda, N_samples);
         mu(i) = mean(exp_samples);
         var(i) = std(exp_samples)^2;
 
