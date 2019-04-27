@@ -42,6 +42,8 @@ if nargin >= 7
     x_limits = xlim; y_limits = ylim;
     text(x_limits(1), y_limits(2) - (y_limits(2)-y_limits(1))*0.05,['ajuste lineal: y=', num2str(lin_reg(1)), 'x+', num2str(lin_reg(1))]);
     title({'Gaussianas correlacionadas', ['mu1=',num2str(mu1),', mu2=',num2str(mu2),', sigma1=',num2str(sigma1),', sigma2=',num2str(sigma2),', ro=',num2str(ro),', ', num2str(N),' muestras']});
+    xlabel('Gaussiana 1');
+    ylabel('Gaussiana 2');
     hold off;
     
 end
